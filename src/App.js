@@ -10,7 +10,7 @@ class App extends Component {
         disneyCards,
         score: 0,
         highScore: 0,
-        message: ""
+        message: "Try to avoid clicking the same movie twice!"
     };
 
     handleClick = (id, clicked) => {
@@ -22,7 +22,7 @@ class App extends Component {
             });
             return this.setState({
                 image: cardShuffle.sort(() => Math.random() - 0.5),
-                message: "Uh oh, you already clicked that movie!",
+                message: "Oops, you already clicked that movie! Click a movie to play again.",
                 score: 0
             })
         } else {
@@ -51,7 +51,6 @@ class App extends Component {
             <div className="container app-container">
                 <header className="jumbotron">
                     <h1 className="title">Disney Memory Game</h1>
-                    <h5 className="sub-title">Try not to click the same movie twice!</h5>
                 </header>
 
                 <Wrapper>

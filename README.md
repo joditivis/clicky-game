@@ -1,1 +1,2 @@
-# clicky-game
+![image](logo.png)
+

@@ -1,5 +1,4 @@
 body {
-    /* background-color: rgb(255, 184, 52); */
     background-image: url(../src/images/wheel.jpeg);
     background-size: 100%;
     background-attachment: fixed;
@@ -21,11 +20,6 @@ h1 {
     font-weight: normal;
     font-style: normal;
     font-size: 70px;
-}
-
-h5 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 17px;
 }
 
 .card {
