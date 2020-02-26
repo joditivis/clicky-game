@@ -46,18 +46,21 @@ class App extends Component {
 
    render() {
        return (
-           <div className="app">
+           <div className="App">
+            <div className="container app-container">
                 <header className="header">
-                    <h1 className="title">Disney Clicky Game</h1>
+                    <h1 className="title">Disney Memory Game</h1>
                 </header>
+            </div>
 
                 <Wrapper>
-                    <Score 
+                    <Score
                         score={this.state.score} 
                         highScore={this.state.highScore}
                         message={this.state.message}>
                     </Score>
 
+                <div className="row cards-row">
                     {this.state.disneyCards.map(disney => (
                         <Card
                         id={disney.id}
@@ -67,8 +70,9 @@ class App extends Component {
                         handleClick={this.handleClick}
                         />
                     ))}
-                    </Wrapper>
-             </div>
+                </div>
+                </Wrapper>
+            </div>
        );
    }
 }

@@ -1,9 +1,9 @@
-.allCards {
-    padding: 5px;
-    text-align: center;
+.allCards img {
+    width: 190px;
+    height: 270px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
 }
 
-.allCards img {
-    width: 200px;
-    height: 300px;
+.allCards {
+    margin: 17px;
 }

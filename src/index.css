@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(255, 184, 52);
+}
+
+.header {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'WaltographRegular';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px;
+}
+
+.cards-row {
+    margin: 10px;
+    margin-left: 35px;
+}
