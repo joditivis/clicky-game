@@ -1,21 +1,31 @@
 body {
-    background-color: rgb(255, 184, 52);
+    /* background-color: rgb(255, 184, 52); */
+    background-image: url(../src/images/wheel.jpeg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.header {
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+.jumbotron {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(255, 205, 97);
 }
 
 h1 {
     font-family: 'WaltographRegular';
     font-weight: normal;
     font-style: normal;
-    font-size: 60px;
+    font-size: 70px;
 }
 
-.cards-row {
-    margin: 10px;
-    margin-left: 35px;
+.card {
+    background-color: rgb(147, 207, 235);
+    margin-bottom: 4rem;
+    padding: 15px;
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 10px 30px 0 rgba(0, 0, 0, 0.19);
 }

@@ -48,30 +48,31 @@ class App extends Component {
        return (
            <div className="App">
             <div className="container app-container">
-                <header className="header">
+                <header className="jumbotron">
                     <h1 className="title">Disney Memory Game</h1>
                 </header>
-            </div>
 
                 <Wrapper>
+                <div className="card">
                     <Score
                         score={this.state.score} 
                         highScore={this.state.highScore}
                         message={this.state.message}>
                     </Score>
-
-                <div className="row cards-row">
-                    {this.state.disneyCards.map(disney => (
-                        <Card
-                        id={disney.id}
-                        key={disney.id}
-                        image={disney.image}
-                        clicked={disney.clicked}
-                        handleClick={this.handleClick}
-                        />
-                    ))}
+                    <div className="row cards-row">
+                        {this.state.disneyCards.map(disney => (
+                            <Card
+                            id={disney.id}
+                            key={disney.id}
+                            image={disney.image}
+                            clicked={disney.clicked}
+                            handleClick={this.handleClick}
+                            />
+                        ))}
+                    </div>
                 </div>
                 </Wrapper>
+                </div>
             </div>
        );
    }
