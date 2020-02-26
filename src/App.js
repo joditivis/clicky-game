@@ -32,14 +32,14 @@ class App extends Component {
                 }
             });
 
-            const { topScore, score } = this.state;
+            const { highScore, score } = this.state;
             const newScore = score + 1;
-            const newHighScore = newScore > topScore ? newScore : topScore;
+            const newHighScore = newScore > highScore ? newScore : highScore;
 
             return this.setState({
                 image: cardShuffle.sort(() => Math.random() - 0.5),
                 score: newScore,
-                topScore: newHighScore
+                highScore: newHighScore
             });
         };
     };
