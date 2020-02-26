@@ -1,0 +1,9 @@
+.allCards {
+    padding: 5px;
+    text-align: center;
+}
+
+.allCards img {
+    width: 200px;
+    height: 300px;
+}
