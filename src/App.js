@@ -38,6 +38,7 @@ class App extends Component {
 
             return this.setState({
                 image: cardShuffle.sort(() => Math.random() - 0.5),
+                message: "",
                 score: newScore,
                 highScore: newHighScore
             });
@@ -50,6 +51,7 @@ class App extends Component {
             <div className="container app-container">
                 <header className="jumbotron">
                     <h1 className="title">Disney Memory Game</h1>
+                    <h5 className="sub-title">Try not to click the same movie twice!</h5>
                 </header>
 
                 <Wrapper>
